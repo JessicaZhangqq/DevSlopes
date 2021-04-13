@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Project of DevSlope</title>
+        <title>Percentate Calculator</title>
         <link  rel = "stylesheet" href = "style.css">
         <link  rel = "stylesheet" href = "cal.css">
         <script type="text/javascript" src="JS/cal.js"></script>
@@ -11,13 +11,16 @@
         <div class="container">
             <h1>Percentage Calculator</h1>
             <p>X is what percent of Y?</p>
-            <form>
-                <input type="text" calss="inputbox"> is what percentage of
-                <input type="text" calss="inputbox"> ?
+            <form id="formCalculator">
+                <input type="text" calss="inputbox" id="num1"> is what percentage of
+                <input type="text" calss="inputbox" id="num2"> ?
                 <input type="submit" value="Calculate" class="submitButton">  
             </form>
-            <h3>Result:100%</h3>
+            <div class="resultArea">
+                <h3>Result:</h3>
+                <p id="resultField"></p>
+            </div>
         </div>
-        
+        <script type="text/javascript" src="JS/cal.js"></script>
     </body>
 </html>
